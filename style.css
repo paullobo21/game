@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #ff9933, #ff3399);
+  }
+  
+  .container {
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+  
+  .scoreboard {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .game {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .choice {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+  }
+  /* Additional colors */
+#colorMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .colorOption {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  /* Winner declaration animation */
+  @keyframes spiral {
+    0% {
+      transform: scale(0) rotate(0deg);
+    }
+    100% {
+      transform: scale(1) rotate(720deg);
+    }
+  }
+  
+  .result {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+    animation: spiral 1s ease-in-out;
+  }
